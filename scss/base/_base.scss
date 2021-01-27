@@ -1,0 +1,31 @@
+// Some basic resets
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+// Reset Heading font sizes
+h1, h2, h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0.5em;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    // base font styles
+    color: $dark-blue;
+    font-family: $primary-font;
+    font-size: 1.125rem;
+    line-height: 1.3;
+}

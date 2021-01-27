@@ -1,0 +1,52 @@
+.card {
+    z-index: 100;
+    // To center the card
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 87%;
+    max-width: 19.4444em;
+    height: 20.8333em;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 3px 2px $gray;
+
+    &__upperbg {
+        height: 8.5em;
+        background-image: url(../img/bg-pattern-card.svg);
+        border-radius: 12px 12px 0 0;
+    }
+
+    &__pic {
+        display: block;
+        border: 5px solid white;
+        border-radius: 50%;
+        margin: -3.3125em auto 0;
+        
+    }
+
+    &__user-age {
+        color: $grayish-blue;
+        font-weight: 400;
+    }
+
+    &__city {
+        font-size: 1rem;
+        color: $grayish-blue;
+    }
+
+    &__stats {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid $gray;
+    }
+
+    &__description {
+        font-size: 0.825rem;
+        color: $grayish-blue;
+    }
+}

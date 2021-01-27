@@ -1,0 +1,32 @@
+body {
+    background-color: $cyan;
+    overflow: hidden;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    
+    // Set the background-images for the circles on page background and set mobile positions
+    background: url(../img/bg-pattern-top.svg) no-repeat right 9.1667em bottom 16.667em,
+                url(../img/bg-pattern-bottom.svg)  no-repeat 9.1667em 20.8334em;
+}
+
+// Adjust circles for bigger screens
+@media only screen and (min-width: $bp-tablet) {
+    body::after {
+        background-position: right 20em bottom 16.667em,
+                                20em 20.8337em;
+    }
+}
+
+@media only screen and (min-width: $bp-desktop) {
+    body::after {
+        background-position: right 41.6667em bottom 13.8887em,
+                                39.7223em 20.8337em;
+    }
+
+}
